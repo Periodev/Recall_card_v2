@@ -1,7 +1,7 @@
-namespace Recall.GameModel.Interfaces {
-    using Recall.GameModel.Cards;
-    using Recall.GameModel.Echo;
+using Recall.Cards;
+using Recall.Echo;
 
+namespace Recall.Interfaces {
     /// <summary>
     /// Defines the interface for executing operation cards and replaying EchoCards.
     /// </summary>

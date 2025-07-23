@@ -1,4 +1,4 @@
-namespace Recall.GameModel.Cards {
+namespace Recall.Cards {
     /// <summary>
     /// Enum representing the core types of operations a player can perform.
     /// </summary>

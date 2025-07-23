@@ -1,0 +1,34 @@
+[CompileFromMemory_ShouldReturnFullSequence] 能正確回傳完整記憶序列。
+[CompileFromMemory_ShouldSetReverbSymbolToLastCode] 將卡的最後一個代碼設為 ReverbSymbol。
+[CompileFromMemory_EmptyTimeline_ShouldReturnEmptyEcho] 處理空記憶時回傳空 Echo。
+
+[Execute_ShouldPerformCorrectAction] 能正確執行單張行動卡。
+[ExecuteEcho_ShouldPerformAllActions] 能正確執行 echo 內的操作。
+[ExecuteEcho_EmptyEcho_ShouldNotFail] 能處理沒有 Echo 卡的狀態。
+
+[Push_ShouldTrimToMaxSize] 超過容量時只保留最新 N 張卡。
+[GetRecallable_ShouldReturnInOrder] 能依推入順序回傳所有卡片。
+[EmptyTimeline_ShouldReturnEmptyList] 空的 MemoryTimeline 回傳空列表。
+
+---
+EchoCompilerTests.cs 相依檔案：
+core/Cards/OperationTypes.cs
+core/Cards/CardInstance.cs
+core/Cards/OperationCard.cs
+core/Zones/MemoryTimeline.cs
+core/Echo/EchoCompiler.cs
+core/Echo/EchoCard.cs
+
+MemoryTimelineTests.cs 相依檔案：
+core/Cards/OperationTypes.cs
+core/Cards/CardInstance.cs
+core/Cards/OperationCard.cs
+core/Zones/MemoryTimeline.cs
+
+OperationExecutorTests.cs 相依檔案：
+core/Cards/OperationTypes.cs
+core/Cards/CardInstance.cs
+core/Cards/OperationCard.cs
+core/Echo/EchoCard.cs
+core/GameConstants.cs
+core/Executor/OperationExecutor.cs 

@@ -1,6 +1,6 @@
 # .NET build artifacts
-bin/
-/obj/
+**/bin/
+**/obj/
 
 # User-specific files
 *.user
@@ -28,4 +28,10 @@ TestResults/
 # NuGet & build cache
 *.nuget.dgspec.json
 *.assets.json
-*.nuget.cache 
+*.nuget.cache
+
+# Common build outputs
+*.dll
+*.pdb
+*.cache
+*.json 

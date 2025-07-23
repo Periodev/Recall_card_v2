@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Recall.GameModel.Cards;
+using Recall.Cards;
 
-namespace Recall.GameModel.Combat {
+namespace Recall.Combat {
     public class OperationHistory {
         public List<CardInstance> AllActions = new();
         public void Record(CardInstance card) => AllActions.Add(card);

@@ -1,8 +1,12 @@
-using Recall.GameModel.Zones;
+using System;
+using Recall.Zones;
 
-namespace Recall.GameModel.Echo {
+namespace Recall.Echo {
     public class EchoCompiler {
         public EchoCard CompileFromMemory(MemoryTimeline timeline) {
+            if (timeline == null)
+                throw new ArgumentNullException(nameof(timeline));
+
             var echo = new EchoCard();
             echo.RecalledSequence = timeline.GetRecallable();
             if (echo.RecalledSequence.Count > 0)

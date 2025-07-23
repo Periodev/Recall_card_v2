@@ -1,4 +1,4 @@
-namespace Recall.GameModel.Cards {
+namespace Recall.Cards {
     public enum CardSource { Deck, Echo, Generated }
 
     public class CardInstance {

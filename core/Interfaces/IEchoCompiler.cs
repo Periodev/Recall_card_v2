@@ -1,7 +1,7 @@
-namespace Recall.GameModel.Interfaces {
-    using Recall.GameModel.Zones;
-    using Recall.GameModel.Echo;
+using Recall.Zones;
+using Recall.Echo;
 
+namespace Recall.Interfaces {
     /// <summary>
     /// Defines the interface for compiling an EchoCard from the memory timeline.
     /// </summary>

@@ -1,6 +1,6 @@
 using NUnit.Framework;
-using Recall.GameModel.Cards;
-using Recall.GameModel.Zones;
+using Recall.Cards;
+using Recall.Zones;
 using System.Collections.Generic;
 using System.Linq;
 

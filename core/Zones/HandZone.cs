@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Recall.GameModel.Cards;
+using Recall.Cards;
 
-namespace Recall.GameModel.Zones {
+namespace Recall.Zones {
     public class HandZone {
         public List<CardInstance> Hand = new();
         public void Add(CardInstance card) => Hand.Add(card);

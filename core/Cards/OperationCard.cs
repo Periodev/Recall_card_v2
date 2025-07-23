@@ -1,4 +1,4 @@
-namespace Recall.GameModel.Cards {
+namespace Recall.Cards {
     public class OperationCard {
         public string Code; // A, B, C, D
         public OperationType Type;

@@ -1,0 +1,25 @@
+✅ 命名與結構統一指令（給 Cursor）
+請將所有模組命名與 namespace 統一為以下格式：
+
+📦 命名空間規範（Namespace Rules）
+請使用以下格式，不要加入多餘的層級（如 GameModel、CoreLogic 等）：
+namespace Recall.Cards         // 行動卡與卡片定義
+namespace Recall.Echo          // Echo 記憶回放系統
+namespace Recall.Executor      // 行動執行器
+namespace Recall.Combat        // 戰鬥單位與狀態處理
+namespace Recall.TurnSystem    // 回合與流程控制
+namespace Recall.Zones         // 記憶區與手牌區等位置系統
+
+📁 資料夾位置規則（Folder Mapping）
+資料夾	對應命名空間
+core/Cards	Recall.Cards
+core/Echo	Recall.Echo
+core/Executor	Recall.Executor
+core/Combat	Recall.Combat
+core/TurnSystem	Recall.TurnSystem
+core/Zones	Recall.Zones
+
+✅ 額外備註
+不要使用 GameModel, Base, Logic, Core 等泛用命名空間。
+每個 .cs 檔案應與其所在資料夾對應 namespace。
+例如：core/Combat/Actor.cs 應使用 namespace Recall.Combat;
